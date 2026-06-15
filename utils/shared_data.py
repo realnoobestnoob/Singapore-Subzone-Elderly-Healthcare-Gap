@@ -24,6 +24,7 @@ from utils.data_pipeline import (
 from utils.clustering import run_clustering, get_silhouette
 
 CACHE_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "pipeline_cache")
+st.caption(f"Loaded clustered.csv: rows={len(clustered)}, cache_exists={os.path.exists(cache_path)}")
 
 _DF_FILES = {
     "pop":        "pop.csv",
