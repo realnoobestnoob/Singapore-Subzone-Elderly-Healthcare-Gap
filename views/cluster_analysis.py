@@ -8,7 +8,6 @@ import pandas as pd
 import numpy as np
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
-st.caption(f"Loaded clustered.csv: rows={len(clustered)}, cache_exists={os.path.exists(cache_path)}")
 
 from utils.clustering import CLUSTER_COLORS, TIER_ORDER
 from utils.shared_data import get_pipeline_data
